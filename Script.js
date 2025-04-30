@@ -285,22 +285,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let offsetX, offsetY, isDragging = false;
 
-    addEventForm.addEventListener('mousedown', (e) => {
-      isDragging = true;
-      offsetX = e.clientX - addEventForm.offsetLeft;
-      offsetY = e.clientY - addEventForm.offsetTop;
-      addEventForm.style.cursor = 'grabbing';
-    });
-    document.addEventListener('mousemove', (e) => {
-      if (isDragging) {
-        addEventForm.style.left = `${e.clientX - offsetX}px`;
-        addEventForm.style.top = `${e.clientY - offsetY}px`;
-      }
-    });
-    document.addEventListener('mouseup', () => {
-      isDragging = false;
-      addEventForm.style.cursor = 'grab';
-    });
+    function startDrag(e) {
+        isDragging = true;
+        const clientX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+        const clientY = e.type === 'touchstart' ? e.touches[0].clientY : e.clientY;
+        offsetX = clientX - addEventForm.offsetLeft;
+        offsetY = clientY - addEventForm.offsetTop;
+        addEventForm.style.cursor = 'grabbing';
+    }
+
+    function drag(e) {
+        if (isDragging) {
+            const clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+            const clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+            addEventForm.style.left = `${clientX - offsetX}px`;
+            addEventForm.style.top = `${clientY - offsetY}px`;
+        }
+    }
+
+    function endDrag() {
+        isDragging = false;
+        addEventForm.style.cursor = 'grab';
+    }
+
+    addEventForm.addEventListener('mousedown', startDrag);
+    addEventForm.addEventListener('touchstart', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('mouseup', endDrag);
+    document.addEventListener('touchend', endDrag);
 
     function clearEventForm() {
         eventTitleInput.value = '';
