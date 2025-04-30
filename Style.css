@@ -693,6 +693,7 @@ body::before {
 
   #add-event-form {
     position: absolute;
+    cursor: grab;
     top: 30%;
     left: 60%;
     height: auto;
