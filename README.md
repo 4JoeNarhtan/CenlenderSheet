@@ -37,7 +37,6 @@ It also helps me practice how real-world task managers work.
 ## 🙋‍♂️ Author
 
 Joe Narthan (Chun Visal)
-- GitHub: (https://github.com/4joeNarthan)  
-- WhatsApp: (https://instagram.com/yourinsta)
+- GitHub: (https://github.com/4joeNarhtan)  
+- WhatsApp: (https://wa.me/855888093342 )
 
----
