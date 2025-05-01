@@ -24,11 +24,10 @@ I built this project to improve my JavaScript skills and learn how to manage dyn
 It also helps me practice how real-world task managers work.
 
 ## 📂 Folder Structure
-## ⚙️ How to Use
 
 1. Download or clone this repository
 2. Open `index.html` in your browser
-3. Add your tasks and plan your days!
+4. Add your tasks and plan your days!
 
 ## 📸 Screenshots
 
