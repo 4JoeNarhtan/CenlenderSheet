@@ -29,7 +29,7 @@ It also helps me practice how real-world task managers work.
 2. Open (https://4joenarhtan.github.io/CenlenderSheet/) in your browser
 4. Add your tasks and plan your days!
 
-## 📸 Screenshots
+## 📸 Image 
 
 ![{EC207B2E-BED8-4D57-BD74-85AE4B077E99}](https://github.com/user-attachments/assets/5396d256-e9d4-4ec2-b30a-886056eab25a)
 
