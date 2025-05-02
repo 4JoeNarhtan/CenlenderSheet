@@ -26,7 +26,7 @@ It also helps me practice how real-world task managers work.
 ## 📂 Folder Structure
 
 1. Download or clone this repository
-2. Open `https://4joenarhtan.github.io/CenlenderSheet/` in your browser
+2. Open (https://4joenarhtan.github.io/CenlenderSheet/) in your browser
 4. Add your tasks and plan your days!
 
 ## 📸 Screenshots
